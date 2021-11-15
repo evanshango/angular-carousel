@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  padding: 0 .5rem
+}
+
+button {
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background: #e5e5e5;
+  outline: none;
+  color: white;
+  border: 1px solid transparent;
+  -webkit-appearance: button;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+
+  &:focus {
+    -webkit-box-shadow: inset 0 0 10px #c1c1c1;
+    -moz-box-shadow: inset 0 0 10px #c1c1c1;
+    box-shadow: inset 0 0 10px #c1c1c1;
+  }
+}

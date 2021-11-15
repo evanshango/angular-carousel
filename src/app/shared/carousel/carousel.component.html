@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <div class="carousel-content" #carouselContainer>
+    <ng-content></ng-content>
+  </div>
+  <div class="carousel-buttons" *ngIf="buttons">
+    <button class="carousel-prev-btn" type="button" (click)="prevSlide()">&#8249;</button>
+    <button class="carousel-next-btn" type="button" (click)="nextSlide()">&#8250;</button>
+  </div>
+  <div class="carousel-indicators" *ngIf="indicators">
+    <div class="dot" *ngFor="let item of pages; let i = index">
+      <span (click)="indicatorClicked(item)" [class.active]="activePage === i + 1"></span>
+    </div>
+  </div>
+</div>

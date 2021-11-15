@@ -1,0 +1,15 @@
+.header{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+
+  h2{
+    color: #424242;
+    font-weight: 700;
+
+    @media screen and (max-width: 698px){
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+  }
+}

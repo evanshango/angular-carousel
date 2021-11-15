@@ -1,0 +1,47 @@
+.product{
+  &-item{
+    border: 1px solid #dcdcdc;
+    margin: 1rem;
+    border-radius: .3rem;
+    height: 14rem;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 .5rem;
+      height: 9rem;
+    }
+  }
+
+  &-image{
+    height: 60%;
+    width: 100%;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #dcdcdc;
+
+    img{
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: 698px) {
+      height: 50%;
+    }
+  }
+
+  &-title, &-price{
+    text-align: center;
+    margin: 0;
+  }
+
+  &-title{
+    margin: .5rem 0;
+    p{
+      font-weight: 700;
+    }
+  }
+
+  &-price{
+    color: orange;
+    font-weight: 600;
+  }
+}
